@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+section {
+    width: 320px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    /* background-color: blue; */
+}
+
+p {
+    font-size: 30px;
+}
+
+button {
+    height: 40px;
+    width: 80px;
+}
+
+#boxButton {
+    height: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+#boxResultHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#boxResult{
+    margin-top: 15px;
+    height: 70px;
+    width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+        #playerChoice {
+            height: 100%;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #machineRandon {
+            height: 100%;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+    #result {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
