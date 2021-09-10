@@ -32,55 +32,78 @@ function verifyWinner(player) {
     const msg2 = 'Machine'
     const msg3 = 'Player'
 
-    if (player === machine) {
+    if (player === 0 && machine === 0) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        // imgPlayer = '/img/icons8-hand-rock-48.png'
         playerChoice.appendChild(imgPlayer)
+        imgPlayer.src = `img/${player}hand.png`
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
+        imgMachine.src = `img/${machine}hand.png`
+        result.innerText = msg1.toUpperCase()
+    } else if (player === 1 && machine === 1) {
+        playerChoice.innerText = `${guns[player].toUpperCase()}`
+        playerChoice.appendChild(imgPlayer)
+        imgPlayer.src = `img/${player}hand.png`
+        machineRandon.innerText = `${guns[machine].toUpperCase()}`
+        machineRandon.appendChild(imgMachine)
+        imgMachine.src = `img/${machine}hand.png`
+        result.innerText = msg1.toUpperCase()
+    } else if (player === 2 && machine === 2) {
+        playerChoice.innerText = `${guns[player].toUpperCase()}`
+        playerChoice.appendChild(imgPlayer)
+        imgPlayer.src = `/img/${player}hand.png`
+        machineRandon.innerText = `${guns[machine].toUpperCase()}`
+        machineRandon.appendChild(imgMachine)
+        imgMachine.src = `img/${machine}hand.png`
         result.innerText = msg1.toUpperCase()
     } else if (player === 0 && machine === 1) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        // imgPlayer = 'img/icons8-hand-rock-48.png'
         playerChoice.appendChild(imgPlayer)
+        imgPlayer.src = `/img/${player}hand.png`
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
+        imgMachine.src = `img/${machine}hand.png`
         result.innerText = msg2.toUpperCase()
     } else if (player === 0 && machine === 2) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        // imgPlayer = 'img/icons8-hand-rock-48.png'
+        imgPlayer.src = `/img/${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
+        imgMachine.src = `img/${machine}hand.png`
         result.innerText = msg3.toUpperCase()
     } else if (player === 1 && machine === 0) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        // imgPlayer = '/img/icons8-hand-rock-48.png'
+        imgPlayer.src = `/img/${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
+        imgMachine.src = `img/${machine}hand.png`
         result.innerText = msg3.toUpperCase()
     } else if (player === 1 && machine === 2) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        // imgPlayer = '/img/icons8-hand-rock-48.png'
+        imgPlayer.src = `/img/${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
+        imgMachine.src = `img/${machine}hand.png`
         result.innerText = msg2.toUpperCase()
     } else if (player === 2 && machine === 0) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        // imgPlayer = '/img/icons8-hand-rock-48.png'
+        imgPlayer.src = `/img/${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
+        imgMachine.src = `img/${machine}hand.png`
         result.innerText = msg2.toUpperCase()
     } else if (player === 2 && machine === 1) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        // imgPlayer = '/img/icons8-hand-rock-48.png'
+        imgPlayer.src = `/img/${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         imgPlayer.style
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
+        imgMachine.src = `img/${machine}hand.png`
         result.innerText = msg3.toUpperCase()
     } 
 }
