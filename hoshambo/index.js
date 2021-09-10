@@ -34,7 +34,7 @@ function verifyWinner(player) {
 
     if (player === machine) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        // imgPlayer = 'img/icons8-hand-rock-48.png'
+        // imgPlayer = '/img/icons8-hand-rock-48.png'
         playerChoice.appendChild(imgPlayer)
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
