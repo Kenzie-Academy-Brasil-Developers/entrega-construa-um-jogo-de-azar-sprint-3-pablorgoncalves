@@ -27,6 +27,7 @@ function verifyWinner(player) {
     const imgMachine = new Image(50,50)
     const imgResult = new Image(50,50)
     
+    const imgSource = 'https://kenzie-academy-brasil-developers.github.io/entrega-construa-um-jogo-de-azar-sprint-3-pablorgoncalves/hoshambo/img/'
     
     const msg1 = 'EMPATE!'
     const msg2 = 'Machine'
@@ -35,75 +36,75 @@ function verifyWinner(player) {
     if (player === 0 && machine === 0) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
         playerChoice.appendChild(imgPlayer)
-        imgPlayer.src = `img/${player}hand.png`
+        imgPlayer.src = `${imgSource}${player}hand.png`
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
-        imgMachine.src = `img/${machine}hand.png`
+        imgMachine.src = `${imgSource}${machine}hand.png`
         result.innerText = msg1.toUpperCase()
     } else if (player === 1 && machine === 1) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
         playerChoice.appendChild(imgPlayer)
-        imgPlayer.src = `img/${player}hand.png`
+        imgPlayer.src = `${imgSource}${player}hand.png`
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
-        imgMachine.src = `img/${machine}hand.png`
+        imgMachine.src = `${imgSource}${machine}hand.png`
         result.innerText = msg1.toUpperCase()
     } else if (player === 2 && machine === 2) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
         playerChoice.appendChild(imgPlayer)
-        imgPlayer.src = `/img/${player}hand.png`
+        imgPlayer.src = `${imgSource}${player}hand.png`
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
-        imgMachine.src = `img/${machine}hand.png`
+        imgMachine.src = `${imgSource}${machine}hand.png`
         result.innerText = msg1.toUpperCase()
     } else if (player === 0 && machine === 1) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
         playerChoice.appendChild(imgPlayer)
-        imgPlayer.src = `/img/${player}hand.png`
+        imgPlayer.src = `${imgSource}${player}hand.png`
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
-        imgMachine.src = `img/${machine}hand.png`
+        imgMachine.src = `${imgSource}${machine}hand.png`
         result.innerText = msg2.toUpperCase()
     } else if (player === 0 && machine === 2) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        imgPlayer.src = `/img/${player}hand.png`
+        imgPlayer.src = `${imgSource}${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
-        imgMachine.src = `img/${machine}hand.png`
+        imgMachine.src = `${imgSource}${machine}hand.png`
         result.innerText = msg3.toUpperCase()
     } else if (player === 1 && machine === 0) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        imgPlayer.src = `/img/${player}hand.png`
+        imgPlayer.src = `${imgSource}${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
-        imgMachine.src = `img/${machine}hand.png`
+        imgMachine.src = `${imgSource}${machine}hand.png`
         result.innerText = msg3.toUpperCase()
     } else if (player === 1 && machine === 2) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        imgPlayer.src = `/img/${player}hand.png`
+        imgPlayer.src = `${imgSource}${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
-        imgMachine.src = `img/${machine}hand.png`
+        imgMachine.src = `${imgSource}${machine}hand.png`
         result.innerText = msg2.toUpperCase()
     } else if (player === 2 && machine === 0) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        imgPlayer.src = `/img/${player}hand.png`
+        imgPlayer.src = `${imgSource}${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
-        imgMachine.src = `img/${machine}hand.png`
+        imgMachine.src = `${imgSource}${machine}hand.png`
         result.innerText = msg2.toUpperCase()
     } else if (player === 2 && machine === 1) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
-        imgPlayer.src = `/img/${player}hand.png`
+        imgPlayer.src = `${imgSource}${player}hand.png`
         playerChoice.appendChild(imgPlayer)
         imgPlayer.style
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
-        imgMachine.src = `img/${machine}hand.png`
+        imgMachine.src = `${imgSource}${machine}hand.png`
         result.innerText = msg3.toUpperCase()
     } 
 }
