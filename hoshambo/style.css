@@ -17,12 +17,13 @@ section {
 }
 
 p {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 button {
-    height: 40px;
-    width: 80px;
+    height: 50px;
+    width: 70px;
+
 }
 
 #boxButton {
@@ -53,17 +54,23 @@ button {
     }
         #playerChoice {
             height: 100%;
-            width: 30%;
+            width: 20%;
+            text-align: center;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
         #machineRandon {
             height: 100%;
-            width: 30%;
+            width: 20%;
+            text-align: center;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
         
 
