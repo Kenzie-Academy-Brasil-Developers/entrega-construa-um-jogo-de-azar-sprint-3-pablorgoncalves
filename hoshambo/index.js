@@ -29,7 +29,7 @@ function verifyWinner(player) {
     
     const imgSource = 'https://kenzie-academy-brasil-developers.github.io/entrega-construa-um-jogo-de-azar-sprint-3-pablorgoncalves/hoshambo/img/'
     
-    const msg1 = 'EMPATE!'
+    const msg1 = 'TIE!'
     const msg2 = 'Machine Win'
     const msg3 = 'Player Win'
 
