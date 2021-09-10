@@ -30,8 +30,11 @@ function verifyWinner(player) {
     const imgSource = 'https://kenzie-academy-brasil-developers.github.io/entrega-construa-um-jogo-de-azar-sprint-3-pablorgoncalves/hoshambo/img/'
     
     const msg1 = 'EMPATE!'
-    const msg2 = 'Machine'
-    const msg3 = 'Player'
+    const msg2 = 'Machine Win'
+    const msg3 = 'Player Win'
+
+    // Deveria usar um FOR... mas depois eu refaço
+
 
     if (player === 0 && machine === 0) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
