@@ -18,9 +18,17 @@ section {
 }
 
 button {
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 75px;
+    border: #333 solid 5px;
     border-radius: 50%;
+    border-radius: .5*2em;
+	color: #000;
+	text-shadow: 1px 1px #000
+	/* font: 900 1.5em calligraffitti, cursive; */
+	filter: contrast(.65);
+	transition: .2s ease-out;
+	cursor: pointer;
 }
 
 #boxButton {
@@ -145,5 +153,8 @@ button {
     img {
         height: 100px;
         width: 100px;
+    }
+    #machineRandon {
+        width: 20%;
     }
 }
