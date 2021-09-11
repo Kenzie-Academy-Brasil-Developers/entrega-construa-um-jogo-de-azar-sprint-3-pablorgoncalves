@@ -37,13 +37,13 @@ function verifyWinner(player) {
 
 
     if (player === 0 && machine === 0) {
+        result.innerText = msg1.toUpperCase()
         playerChoice.innerText = `${guns[player].toUpperCase()}`
         playerChoice.appendChild(imgPlayer)
         imgPlayer.src = `${imgSource}${player}hand.png`
         machineRandon.innerText = `${guns[machine].toUpperCase()}`
         machineRandon.appendChild(imgMachine)
         imgMachine.src = `${imgSource}${machine}hand.png`
-        result.innerText = msg1.toUpperCase()
     } else if (player === 1 && machine === 1) {
         playerChoice.innerText = `${guns[player].toUpperCase()}`
         playerChoice.appendChild(imgPlayer)

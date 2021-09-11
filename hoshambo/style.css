@@ -5,38 +5,37 @@ body {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 section {
-    width: 320px;
-    margin-top: 20px;
+    height: 667px;
+    width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;
-    /* background-color: blue; */
-}
-
-p {
-    font-size: 50px;
+    background-color: green;
 }
 
 button {
-    height: 50px;
+    height: 70px;
     width: 70px;
-
+    border-radius: 50%;
 }
 
 #boxButton {
-    /* margin-top: 25px; */
+    margin-top: 40px;
+    margin-bottom: 40px;
     height: 70px;
     width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 
 #boxResultHeader {
+    height: 150px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -45,41 +44,106 @@ button {
 }
 
 #boxResult{
-    margin-top: 15px;
-    height: 100px;
-    width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content:space-evenly;
+    /* margin-top: 15px; */
+    height: 70%;
+    width: 80%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
     }
-        #playerChoice {
-            height: 100%;
-            width: 20%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        #machineRandon {
-            height: 100%;
-            width: 20%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        
-
-    #result {
-        height: 60px;
-        width: 40%;
+    #boxResultPlayer {
+        width: 50%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        /* background-color: hotpink; */
     }
+        #playerChoice {
+            height: 100%;
+            width: 30%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    #boxResultMachine {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* background-color: indigo; */
+    }
+        #machineRandon {
+            height: 100%;
+            width: 30%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #result {
+            background-color: khaki;
+            height: 170px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 50px;
+        }
+
+/* Acima de 600px até 1023px */
+@media (min-width: 600px)
+{
+  
+    section {
+        height: 600px;
+        width: 600px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        background-color: green;
+    }
+
+    img {
+        height: 70px;
+        width: 70px;
+    }
+
+    #result {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 1024px)
+{
+  
+    section {
+        height: 800px;
+        width: 800px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        background-color: green;
+    }
+    img {
+        height: 100px;
+        width: 100px;
+    }
+}
